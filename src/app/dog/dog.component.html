@@ -1,0 +1,27 @@
+<div class="conteiner text-center">
+  <div class = "display-6">
+    Dog´s system
+  </div>
+  <div class="row">
+    <div class="col">
+      <img [src]="dog.message"
+
+      width="200px"
+      class="shadow rounded_corner"
+      >
+    </div>
+  </div>
+  <div class="row m-3">
+    <div class="col">
+      <span *ngFor="let name of getName()">
+          {{name | titlecase}}
+      </span>
+
+    </div>
+  </div>
+  <div class="row m-3">
+    <div class="col">
+      <button class="btn btn-primary" >Novo Dog</button>
+    </div>
+  </div>
+</div>
